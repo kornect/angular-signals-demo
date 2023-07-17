@@ -1,0 +1,43 @@
+<div class="w-full flex flex-col space-y-2">
+  <div class="relative right-0">
+    <ul
+      class="relative flex list-none flex-wrap rounded-lg bg-blue-gray-50/60 p-1"
+      data-tabs="tabs"
+      role="list"
+    >
+      <li class="z-30 flex-auto text-center">
+        <a [routerLinkActive]="'bg-gray-400'" [routerLink]="'basic-signals'"
+          class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer items-center justify-center rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+          data-tab-target=""
+          active
+          role="tab"
+          aria-selected="true"
+        >
+          <span class="ml-1">Basic Signals</span>
+        </a>
+      </li>
+      <li class="z-30 flex-auto text-center">
+        <a [routerLinkActive]="'bg-gray-400'" [routerLink]="'basic-signals-extended'"
+          class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer items-center justify-center rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+          data-tab-target=""
+          role="tab"
+          aria-selected="false"
+        >
+          <span class="ml-1">Basic Signals Extended</span>
+        </a>
+      </li>
+      <li class="z-30 flex-auto text-center">
+        <a [routerLinkActive]="'bg-gray-400'" [routerLink]="'signals-with-rxjs'"
+           class="text-slate-700 z-30 mb-0 flex w-full cursor-pointer items-center justify-center rounded-lg border-0 bg-inherit px-0 py-1 transition-all ease-in-out"
+           data-tab-target=""
+           role="tab"
+           aria-selected="false"
+        >
+          <span class="ml-1">Signals + RxJS</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+
